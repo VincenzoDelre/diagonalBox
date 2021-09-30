@@ -1,0 +1,41 @@
+const DiagonalBox = styled.div`
+
+  position: relative;
+  transform: skewY(-6deg);
+  
+  @media(min-width:768px){
+    padding: 2rem;
+  }
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0a0a09+0,000000+100 */
+  background: rgb(10,10,9); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(10,10,9,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(10,10,9,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(10,10,9,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a09', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  
+
+  &:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  
+
+`;
+
+const Content = styled.div`
+
+  position: relative;
+  transform: skewY(6deg);
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
